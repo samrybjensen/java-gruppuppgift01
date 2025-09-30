@@ -1,7 +1,8 @@
-This is an application for a library where you can:
-Borrow books
-Return books
+## This is an application for a library where you can:
+1. Borrow books
+2. Return books
 
+## Tests
 - The user may only borrow 1 book per day.
 - The user may at most have 5 borrowed books at a time.
 - The user may only borrow one book per title.
