@@ -3,6 +3,8 @@ package dev.jensendev25.groupassignment;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import java.util.List;
+
 import org.junit.jupiter.api.Test;
 import dev.jensendev25.groupassignment.junit.*;
 
