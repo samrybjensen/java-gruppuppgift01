@@ -1,9 +1,10 @@
-package dev.jensendev25.junit;
+package dev.jensendev25.groupassignment;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
+import dev.jensendev25.groupassignment.junit.*;
 
 public class LibraryTest {
   @Test

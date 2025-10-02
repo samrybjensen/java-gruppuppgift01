@@ -1,4 +1,4 @@
-package dev.jensendev25.junit;
+package dev.jensendev25.groupassignment.junit;
 
 public class Book {
   private String name;
