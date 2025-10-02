@@ -14,7 +14,7 @@ Both runtimes share the same Maven project and are launched from the `Main` clas
 
 ## Building the project
 ```bash
-./mvnw clean package
+./mvnw clean package -DskipTests
 ```
 The build produces `target/groupassignment-1.0-snapshot.jar`, which can be used to launch either runtime described below.
 
