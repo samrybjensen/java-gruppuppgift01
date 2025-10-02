@@ -28,8 +28,24 @@ public class LibraryTest {
     Library library = new Library();
 
     // The user may at most have 5 borrowed books at a time.
+    String[] titles = {
+        "Harry Potter",
+        "Hitchhiker's guide to the galaxy",
+        "It ends with us",
+        "Ondskan",
+        "Tempelriddaren"
+    };
 
-    assertTrue(library != null);
+    for (int i = 0; i < titles.length; i++) {
+      List<Book> borrowedAfter = library.borrowBook(titles[i]);
+      assertEquals(i + 1, borrowedAfter.size(), "borrowing a new title on a new day should succeed");
+      library.advanceDay();
+    }
+
+    int borrowedBeforeLimitAttempt = library.listBorrowedBooks(false).size();
+    List<Book> borrowedAfterLimitAttempt = library.borrowBook("Harry Potter");
+    assertEquals(borrowedBeforeLimitAttempt, borrowedAfterLimitAttempt.size(),
+        "library must reject attempts to exceed 5 simultaneously borrowed books");
   }
 
   @Test
